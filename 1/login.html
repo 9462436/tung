@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html charset=utf-8"/>
+		<title>账号登录</title>
+		<style type="text/css">
+		body{background:url(极光1.jpg);background-size: 2000px,1000px; background-attachment: fixed;
+		background-repeat: none;}
+		div{font-size: 25px; color: blue;}
+		.Div{text-align: center; margin-top: 100px;}
+		.DIV1{width: 65px; height: 25px; animation:nihao1 5s infinite 
+		alternate;font-size: larger;color: yellow;transition: all;}
+		@keyframes nihao1{
+			from{background: red; transform: translate(400px,0px);}
+			to{background: blue; transform: translate(1000px,0px);}
+		}
+		.DIV2{width: 105px; height: 25px; animation:nihao2 5s infinite
+		alternate;font-size: larger;color: yellow;transition: all;}
+		@keyframes nihao2{
+			from{background: red; transform: translate(1400px,0px);}
+			to{background: blue; transform: translate(1000px,0px);}
+		}
+		.p::first-letter{float: left;font-size: 30px; color: blue;}
+		img{margin: 100px; border: blue 1px solid;}
+		img:hover{transform: scale(2.0) rotate(10deg); transition: all 1s .25s;}
+		audio{display: none;}
+		</style>
+	</head>
+		<script LANGUAGE="JavaScript"> 
+function submit(){ 
+var s = document.getElementById("txt"); 
+location.href="mypage.html?"+"txt="+encodeURI(s.value); 
+} 
+</script> 				  
+	<body>
+		<div class="DIV1">HELLO!</div>
+        <div class="DIV2">WELCOME!</div>
+		<h1 style="text-align: center;color: blue;margin-top: 200px;">你好，欢迎登录我的网页</h1>
+			<div>
+				<image src="极光1.jpg" width="10%" title="极光"></image>
+			    <image src="极光2.jpg" width="10%" title="极光"></image>
+				<image src="极光3.jpg" width="10%" title="极光"></image>
+				<image src="极光4.jpg" width="10%" title="极光"></image>
+				<p align="left" class="p" >极光是出现于星球的高磁纬地区上空，是一种绚丽多彩的发光现象.</p>
+			</div>
+		<div class="Div">
+			<div id="txt">账号：<input type="text" value="123"></div>
+			<div>密码：<input type="password" value="123"></div>
+			<div><input type="button" value="submit" onclick="submit()"></div>
+	    </div>
+		<audio src="心愿.mp3" controls="controls" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
+	</body>
+</html>
