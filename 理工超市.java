@@ -142,7 +142,7 @@ public class a{
                     for (int i = 0; i < min(4, y); i++)
                         System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + " " + newcount[i]);
                     x=input.nextInt();
-                    int sum=0;
+                    double sum=0;
                     if(x==2) {
                         for(int i=0;i<min(4,y);i++)
                             sum+=newcount[i]*newprice[i];
