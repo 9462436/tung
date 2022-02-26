@@ -75,7 +75,7 @@ public class a{
                     }
                     break;
                 case 5:
-                    int n, x;
+                    int n=0, x=0;
                     System.out.println("请选择您喜欢的商品：");
                     System.out.println("1-缤纷多味糖果 2-五彩纸屑气球 3-亲子装斗篷 4-晨光中性笔");
                     int m = input.nextInt();
@@ -100,14 +100,14 @@ public class a{
 //
 //                                    System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
 //                                    for (int i = 0; i < min(4,y); i++)
-//                                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + "\t" + newcount[i]);
+//                                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + price[i] + "\t" + newcount[i]);
 //                                break;}
 //                            }
 //                            else {
 //                                System.out.println("您的购物车如下（最多展示前四项）:");
 //                                System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
 //                                for (int i = 0; i < min(4,y); i++)
-//                                    System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + "\t" + newcount[i]);
+//                                    System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + price[i] + "\t" + newcount[i]);
 //                                break;
 //                            }
 //                        }
@@ -149,30 +149,30 @@ public class a{
                         System.out.println("您所需支付的金额为："+sum);
                     }
                     else {
-
-                        int p = 0;
+                        int p =0;
                         do {
                             System.out.println("请输入您需要修改的商品的编号：");
                             x = input.nextInt();
                             System.out.println("更改1-商品，还是2-商品数量？");
                             m = input.nextInt();
                             if (m == 1) {
-                                System.out.println("请输入您想要替换商品的编号：1-缤纷多味糖果 2-五彩纸屑气球 3-亲子装斗篷 4-晨光中性笔");
+                                System.out.println("请输入您想要替换成的商品编号：1-缤纷多味糖果 2-五彩纸屑气球 3-亲子装斗篷 4-晨光中性笔");
                                 n = input.nextInt();
-                                newgoodsName[x] = goodsName[n];
+                                newgoodsName[x-1] = goodsName[n-1];
+                                newprice[x-1]=price[n-1];
                                 System.out.println("您是否需要更改此商品数量？1-YES 2-NO");
                                 p = input.nextInt();
                                 if (p == 1) {
                                     System.out.println("请您输入数量：");
                                     n = input.nextInt();
-                                    newcount[x] = n;
+                                    newcount[x-1] = n;
                                     System.out.println("更改成功！");
                                 } else
                                     break;
                             } else {
                                 System.out.println("请您输入数量：");
                                 n = input.nextInt();
-                                newcount[x] = n;
+                                newcount[x-1] = n;
                                 System.out.println("更改成功！");
                             }
                             System.out.println("您是否还需要进行更改？1-YES 2-NO");
