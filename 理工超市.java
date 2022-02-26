@@ -22,32 +22,28 @@ public class a{
         goodsName[3]="晨光中性笔";
         price[3]=1.5;
         count[3]=100;
-
         while(true){
             System.out.println("************欢迎来到理工超市管理系统************");
             System.out.println("   1.用户注册 2.用户登录 3.浏览商品 4.查看商品");
             System.out.println("   5.加入购物车 6.查看购物车 7.结算 0.退出系统");
             System.out.println("********************************************");
             int choice=input.nextInt();
-
-
             switch(choice) {
-
                 case 1:
                     if (signup() == 1)
                         isregister = true;
-                    //break;
+                    break;
                 case 2:
                     if (!isregister)
                         System.out.println("您尚未注册账号，请先注册。");
                     else
                         login();
-                    //break;
+                    break;
                 case 3:
                     System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
                     for (int i = 0; i < 4; i++)
                         System.out.println(i + 1 + "\t" + goodsName[i] + "\t" + price[i] + " " + count[i]);
-                    //break;
+                    break;
                 case 4:
                     System.out.println("正在查看商品，请输入需要查看的商品的编号：");
                     int Choice = input.nextInt();
@@ -77,7 +73,7 @@ public class a{
                                 System.out.println("欢迎下次光临！");
                         }
                     }
-                    //break;
+                    break;
                 case 5:
                     int n, x;
                     System.out.println("请选择您喜欢的商品：");
@@ -192,8 +188,6 @@ public class a{
                     return;
             }
         }
-
-
     }
     public static void login(){
         int random=(int)(Math.random()*9000)+1000;
