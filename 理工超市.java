@@ -145,7 +145,7 @@ public class a{
                     int sum=0;
                     if(x==2) {
                         for(int i=0;i<min(4,y);i++)
-                            sum+=newcount[i]*price[i];
+                            sum+=newcount[i]*newprice[i];
                         System.out.println("您所需支付的金额为："+sum);
                     }
                     else {
@@ -179,7 +179,7 @@ public class a{
                             p = input.nextInt();
                         }while(p!=2);
                         for(int i=0;i<min(4,y);i++)
-                            sum+=newcount[i]*price[i];
+                            sum+=newcount[i]*newprice[i];
                         System.out.println("您所需支付的金额为："+sum);
                     }
                     break;
