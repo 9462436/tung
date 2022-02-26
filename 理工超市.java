@@ -100,14 +100,14 @@ public class a{
 //
 //                                    System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
 //                                    for (int i = 0; i < min(4,y); i++)
-//                                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + price[i] + "\t" + newcount[i]);
+//                                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + "\t" + newcount[i]);
 //                                break;}
 //                            }
 //                            else {
 //                                System.out.println("您的购物车如下（最多展示前四项）:");
 //                                System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
 //                                for (int i = 0; i < min(4,y); i++)
-//                                    System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + price[i] + "\t" + newcount[i]);
+//                                    System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + "\t" + newcount[i]);
 //                                break;
 //                            }
 //                        }
@@ -133,14 +133,14 @@ public class a{
                     System.out.println("您的购物车如下（最多展示前四项）:");
                     System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
                     for (int i = 0; i < min(4, y); i++)
-                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + price[i] + " " + newcount[i]);
+                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + " " + newcount[i]);
                     break;
                 case 7:
                     System.out.println("您的购物信息如下，是否需要进行更改？");
                     System.out.println("1-YES 2-NO");
                     System.out.println("编号" + "\t" + "商品名称" + "\t\t" + "单价" + "\t" + "数量");
                     for (int i = 0; i < min(4, y); i++)
-                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + price[i] + " " + newcount[i]);
+                        System.out.println(i + 1 + "\t" + newgoodsName[i] + "\t" + newprice[i] + " " + newcount[i]);
                     x=input.nextInt();
                     int sum=0;
                     if(x==2) {
