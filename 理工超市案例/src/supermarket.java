@@ -12,7 +12,7 @@ public class supermarket{
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
         boolean isregister=false;
-        User2 user=new User2();
+        User user=new User();     //多用户      //User2 user=new User2();
         while(true) {
             System.out.println("************欢迎来到理工超市管理系统************");
             System.out.println("***1.用户注册 2.用户登录 3.浏览商品 4.查看商品***");
